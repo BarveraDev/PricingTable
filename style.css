@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 :root {
@@ -32,16 +33,27 @@ body {
 .cards {
     display: flex;
     justify-content: center;
+    gap: 2em;
 }
 
-.first-card {
+.card {
     width:  18em;
-    height: 20em;
+    height: 25em;
     background-color: lightgrey;
     border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    padding: 50px;
+    padding: 30px 50px 100px 50px;
+}
+
+.middle-card {
+    height: 28em;
+}
+
+.last-card {
+    width:  18em;
+    height: 25em;
+    margin-top: 10px;
 }
 
 .first-card .free {
@@ -50,6 +62,7 @@ body {
 
 .price {
     display: flex;
+    margin-top: 50px;
 }
 
 .sub-info {
@@ -57,7 +70,7 @@ body {
 }
 
 .benefits {
-    margin: 20px 0 20px 0;
+    margin: 20px 0 5px 0;
 }
 
 .info-benefits {
@@ -67,7 +80,6 @@ body {
 }
 
 .benefits {
-    background-color: rebeccapurple;
     display: flex;
 }
 
@@ -78,4 +90,23 @@ body {
     border: 3px solid var(--blue);
     border-radius: 25px;
     padding: 20px;
+    cursor: pointer;
+    transition: background-color .5s ease, color .5s ease;
+}
+
+.left-button {
+    margin-top: 52%;
+}
+
+.middle-button {
+    margin-top: 40%;
+}
+
+.button:hover {
+    background-color: var(--blue);
+    color: var(--page-background);
+}
+
+.yellow {
+    background-color: #ffcc29;
 }
